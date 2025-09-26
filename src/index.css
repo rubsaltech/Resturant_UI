@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --color-background: #f9fafb;  /* light gray */
+  --color-text: #1f2937;        /* dark text */
+  --color-primary: #16a34a;     /* green */
+  --color-secondary: #9333ea;   /* purple */
+  --color-accent: #f97316;      /* orange */
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --color-background: #1f2937;  /* dark background */
+  --color-text: #f9fafb;        /* light text */
+  --color-primary: #22c55e;     /* lighter green */
+  --color-secondary: #c084fc;   /* light purple */
+  --color-accent: #fb923c;      /* lighter orange */
+}
