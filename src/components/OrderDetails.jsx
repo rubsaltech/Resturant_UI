@@ -63,38 +63,9 @@ const OrderDetails = () => {
             </button>
           </div>
         </div>
-
-        {/* Order Type */}
-        <div className="flex space-x-2 mb-4">
-          {orderTypes.map((type, index) => (
-            <button
-              key={index}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
-                type.active
-                  ? 'bg-green-500 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
-            >
-              {type.name}
-            </button>
-          ))}
-        </div>
-
-        {/* Order Info */}
-        <div className="space-y-2 text-sm text-gray-600">
-          <div className="flex justify-between">
-            <span>Order (#0476)</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Table (#1)</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Austin King</span>
-          </div>
-        </div>
       </div>
 
-      {/* Order Items */}
+      {/* Order Items (scrollable) */}
       <div className="flex-1 p-4 overflow-y-auto">
         <div className="space-y-4">
           {orderItems.map((item, index) => (
